@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <title>Yummmmy</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sty.css">
+</head>
+
+<body>
+<div class="loading">
+<div class="d-flex justify-content-center align-items-center w-100 h-100">
+    <div class="spinner"></div></div>
+
+</div>
+    <nav class="d-flex position-fixed">
+        <div class="sild-nav text-white">
+
+            <ul class="list-unstyled my-5">
+                <li class="item ms-5 px-3 my-3" id="search">Search</li>
+                <li class="item ms-5 px-3 my-3" id="categor">Categories</li>
+                <li class="item ms-5 px-3 my-3" id="area">Area</li>
+                <li class="item ms-5 px-3 my-3" id="Ingredients">Ingredients</li>
+                <li class="item ms-5 px-3 my-3" id="contact">Contact Us</li>
+            </ul>
+            <div class="footer  position-absolute">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="right position-relative">
+            <div class="logo h-50">
+                <img src="img/logo.png" class="w-100" alt="....">
+            </div>
+            <div class="icon ">
+                <i class="m-3 icon-x fs-1  fa-solid fa-bars"></i>
+            </div>
+            <div class="icons position-absolute my-2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-thin fa fa-share-nodes"></i>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <div id="containerSearch" class="container mt-5 d-none">
+        <div class="row">
+            <div class="col-md-6 ">
+                <input onkeyup="searchByNames(this.value)" class="form-control bg-transparent text-white" type="text"
+                    placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input onkeyup="searchByFLetter(this.value)" maxlength="1"
+                    class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="mealCont" class="container mt-4">
+        <div class="row" id="rowData">
+
+           
+        </div>
+
+    </div>
+
+
+
+    <div class="contact d-none  ">
+        <div class="container">
+            <div class="row">
+                <div id="colName" class="col-md-6 my-3">
+                    <input type="text" id="nameInput" required class="form-control" placeholder="Enter Your Name">
+                </div>
+                <div class="col-md-6 my-3">
+                    <input type="text" id="emailInput" required class="form-control" placeholder="Enter Your Email">
+                </div>
+                <div class="col-md-6 my-3">
+                    <input type="text" id="phoneInput" required class="form-control" placeholder="Enter Your Phone">
+                </div>
+                <div class="col-md-6 my-3">
+                    <input type="text" id="ageInput" required  class="form-control" placeholder="Enter Your Age">
+                </div>
+                <div class="col-md-6 my-3">
+                    <input type="password" required id="passwordInput"  class="form-control" placeholder="Enter Your Password">
+                </div>
+                <div class="col-md-6 my-3">
+                    <input type="password" required id="repasswordInput" class="form-control" placeholder="rePassword">
+                </div>
+                <div class="col-md-1 m-auto">
+                    <button id="submit-btn" disabled class="btn  btn-danger">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
